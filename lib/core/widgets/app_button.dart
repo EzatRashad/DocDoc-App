@@ -1,7 +1,6 @@
 import 'package:doc_doc_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+ 
 class AppButton extends StatelessWidget {
   final String title;
   final String? fontFamily;
@@ -41,9 +40,9 @@ class AppButton extends StatelessWidget {
       // height: height,
       decoration: BoxDecoration(
         // gradient: gradient,
-        borderRadius: BorderRadius.circular(radius.r),
+        borderRadius: BorderRadius.circular(radius),
       ),
-      constraints: BoxConstraints(minWidth: width.w, minHeight: height.h),
+      constraints: BoxConstraints(minWidth: width, minHeight: height),
       child: ElevatedButton(
         onPressed: onTap,
         style: ButtonStyle(
@@ -54,7 +53,7 @@ class AppButton extends StatelessWidget {
           shadowColor: WidgetStateProperty.all<Color>(Colors.transparent),
           shape: WidgetStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(radius.r),
+              borderRadius: BorderRadius.circular(radius),
               side: withBorder
                   ? BorderSide(color: borderColor ?? AppColors.mainBlue)
                   : BorderSide(color: Colors.transparent),
@@ -102,7 +101,7 @@ class TextButtonWidget extends StatelessWidget {
         style: TextStyle(
           fontWeight: fontweight ?? FontWeight.w500,
           fontFamily: fontFamily ?? "Almarai",
-          fontSize: size ?? 16.sp,
+          fontSize: size ?? 16,
           color: color ?? Colors.white,
         ),
       ),

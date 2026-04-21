@@ -1,11 +1,7 @@
-import 'package:doc_doc_app/core/route/routes.dart';
-import 'package:doc_doc_app/core/theme/text_styles.dart';
-import 'package:doc_doc_app/core/widgets/app_button.dart';
 import 'package:doc_doc_app/features/on_boarding/presentation/widgets/on_boarding_button.dart';
 import 'package:doc_doc_app/features/on_boarding/presentation/widgets/on_boarding_doctor_image.dart';
 import 'package:doc_doc_app/features/on_boarding/presentation/widgets/on_boardinh_header.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingView extends StatelessWidget {
   const OnBoardingView({super.key});
@@ -15,7 +11,7 @@ class OnBoardingView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.only(top: 30.h, bottom: 10.h),
+          padding: EdgeInsets.only(top: 30, bottom: 10),
           child: Column(
             children: [
               OnBoardingHeader(),
