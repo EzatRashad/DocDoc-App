@@ -1,5 +1,6 @@
 import 'package:doc_doc_app/core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 class OnBoardingDoctorImage extends StatelessWidget {
@@ -22,7 +23,7 @@ class OnBoardingDoctorImage extends StatelessWidget {
           child: Image.asset("assets/images/doctor.png"),
         ),
         Positioned(
-          bottom: 20,
+          bottom: 20.h,
           left: 0,
           right: 0,
           child: Text(
